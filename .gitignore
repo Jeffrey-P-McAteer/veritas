@@ -1,0 +1,26 @@
+
+# dev-env.conf is NOT SAFE TO SHARE across different machines or OSes.
+dev-env.conf
+
+# Ignore our own build output
+bin/
+out/
+obj/
+build/
+target/
+
+# Ignore caches from our build tools
+__pycache__/
+
+# Cover common things people leave lying around
+*.o
+*.jar
+*.class
+*.pyc
+# *.lock # tracking Cargo.lock is actually kinda useful.
+
+
+
+# Added by cargo
+
+/target
